@@ -1,0 +1,22 @@
+
+body {
+    margin :0;
+    box-sizing: border-box;
+    background-color: beige;
+}
+.hero {
+    width: 100%;
+    
+    animation : shrinkVase 5s ease forwards;
+    clip-path: url(#vase-clip);
+}
+
+
+@keyframes shrinkVase {
+  from {
+    transform: translate(-50%, -50%) scale(5); /* Version très grande du vase (invisible) */
+  }
+  to {
+    transform: translate(0.4, 0.30) scale(0.20075676, 0.30075676); /* Taille et position finale */
+  }
+}
